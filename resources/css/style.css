@@ -12,10 +12,6 @@ html {
   width: auto;
 }
 
-.main {
-  padding: 32px 0;
-}
-
 h1 {
   font-weight:700;
   font-size: 3rem;
@@ -35,9 +31,15 @@ h3 {
 }
 
 h4 {
-  font-weight: 400;
+  font-weight: 200;
   font-size: 1rem;
   line-height: 1.1;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: .85rem;
+
 }
 
 /* HEADER */
@@ -123,22 +125,26 @@ nav span {
   flex-wrap: wrap;
   flex-direction: column;
   width: 60%;
-  padding-right: 24px;
+  padding: 32px 24px 32px 0;
 }
 
 .large_tout h2 {
   padding: 32px 0 24px 0;
 }
 
+.large_tout h4 {
+  padding-bottom: 32px;
+}
+
 .tout_image {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 
 .tout_image img {
   max-width: 100%;
-  height: auto;
 }
 
 .info_column {
@@ -146,10 +152,12 @@ nav span {
   flex-wrap: wrap;
   width: 40%;
   border-left: solid #D3D3D3 1px;
+  padding: 0 0 32px 0;
 }
 
 .info_item {
   display: flex;
+  max-height: 176px;
   padding: 16px;
   margin: 1px 0 1px 0;
   border-top: solid #D3D3D3 1px;
@@ -163,20 +171,69 @@ nav span {
   display: flex;
   flex-wrap: wrap;
   width: 65%;
-  padding-left: 16px;
+  padding-left: 24px;
   align-content: center;
 }
 
-.info_item .text h3, h4 {
+.info_item .text h3 h4 {
   padding-bottom: 8px;
 }
 
 .info_item:first-child {
   border-top: none;
   border-bottom: solid #D3D3D3 1px;
+  padding-top: 32px;
 }
 
 .info_item:last-child {
   background-color: #D3D3D3;
   border-top: none;
+}
+
+
+/* COURSES */
+
+.learn {
+  display: flex;
+  padding: 32px 56px 32px 32px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.learn h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.courses {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.course {
+  width: 30%;
+  margin: 32px 16px;
+}
+
+.course img {
+  max-width: 100%;
+  margin: 0;
+}
+
+.course .text_content {
+  background-color: #ffffff;
+  padding: 16px;
+  min-height: 102px;
+}
+
+.course .text_content h4 {
+  padding-top: 8px;
+}
+
+.course .text_content h3 {
+  padding-bottom: 8px;
 }
