@@ -95,7 +95,11 @@ a:hover {
   text-decoration: underline;
 }
 
-/* HEADER */
+/* ---HEADER--- */
+
+.mobile-header {
+  display: none;
+}
 
 .logo {
   height: 32px;
@@ -114,7 +118,7 @@ a:hover {
   font-size: 1.3rem;
 }
 
-header {
+.desktop-header {
   height: 64px;
   display: flex;
   align-items: center;
@@ -130,6 +134,7 @@ nav {
 nav span {
   padding-left: 16px;
 }
+
 
 /* BANNER */
 
@@ -170,6 +175,10 @@ a.button:hover {
   background-color: #5697ff;
 }
 
+.mobile {
+  display: none;
+}
+
 /* INFORMATION */
 
 .information {
@@ -193,17 +202,20 @@ a.button:hover {
 
 .small-tout {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   padding: 16px;
   margin: 1px 0 1px 0;
   border-top: solid #D3D3D3 1px;
 }
 
-.small-tout img {
+.tout-image {
   width: 35%;
 }
 
 .small-tout .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 65%;
   padding-left: 16px;
 }
@@ -330,4 +342,112 @@ footer .container {
 
 .footer-group h5 {
   margin-left: 8px;
+}
+
+
+/* ------- MOBILE STYLES ------- */
+
+@media only screen and (max-width: 750px) {
+
+  /* universal styles: mobile */
+
+  .main {
+    width: 100%;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+    padding: 0;
+  }
+
+  .container {
+    padding: 0 16px 0 16px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  img.mobile {
+    display: block;
+  }
+
+  /* header: mobile */
+
+  .desktop-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-around;
+    height: 64px;
+  }
+
+  /* banner: mobile */
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    height: auto;
+  }
+
+  .banner-text {
+    padding: 32px 16px 32px 16px;
+  }
+
+  .banner-text h1 {
+    margin: 0 0 32px 0;
+  }
+
+  .button {
+    margin-top: 24px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+  }
+
+  /* information: mobile */
+
+  .information .left-column {
+    display: none;
+  }
+
+  .information .right-column {
+    border: none;
+  }
+
+  .small-tout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 64px 0;
+    border: none;
+  }
+
+  .information .small-tout:first-child,
+  .information .small-tout:last-child {
+    border: none;
+    background-color: white;
+  }
+
+  .tout-image {
+    width: 100%;
+  }
+
+  .tout-image img {
+    width: 100%;
+  }
+
+.information .small-tout .text {
+    padding: 16px 16px 0 16px;
+  }
+
 }
