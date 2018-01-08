@@ -76,10 +76,6 @@ h5 {
   width: auto;
 }
 
-.media {
-  width: 100%;
-}
-
 a:link {
   color: #424242;
   text-decoration: none;
@@ -202,7 +198,6 @@ a.button:hover {
 
 .small-tout {
   display: flex;
-  /* align-items: center; */
   padding: 16px;
   margin: 1px 0 1px 0;
   border-top: solid #D3D3D3 1px;
@@ -280,18 +275,18 @@ a.button:hover {
   margin: 0;
 }
 
-.course .text_content {
+.course .text-content {
   background-color: #ffffff;
   padding: 16px;
   min-height: 102px;
   height: 100%;
 }
 
-.course .text_content h4 {
+.course .text-content h4 {
   padding-top: 8px;
 }
 
-.course .text_content h3 {
+.course .text-content h3 {
   padding-bottom: 8px;
 }
 
@@ -312,6 +307,11 @@ a.button:hover {
 
 .thesis-info .large-tout.text {
   padding-top: 24px;
+}
+
+.thesis-info .media {
+  border: 2px solid #D3D3D3;
+
 }
 
 .thesis-info .text h3 {
@@ -420,6 +420,7 @@ footer .container {
 
   .information .right-column {
     border: none;
+    padding-bottom: 0;
   }
 
   .small-tout {
@@ -428,7 +429,7 @@ footer .container {
     justify-content: center;
     width: 100%;
     padding: 0;
-    margin: 0 0 64px 0;
+    margin: 0 0 32px 0;
     border: none;
   }
 
@@ -448,6 +449,83 @@ footer .container {
 
 .information .small-tout .text {
     padding: 16px 16px 0 16px;
+  }
+
+  /* learn: mobile */
+
+  .container.learn.gray {
+    background-color: #ffffff;
+    border-top: solid #D3D3D3 1px;
+    border-bottom: solid #D3D3D3 1px;
+  }
+
+  .learn h2 {
+    padding-top: 32px;
+  }
+
+  .courses {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 32px;
+  }
+
+  .course {
+    margin: 0 0 8px 0;
+    width: 100%;
+  }
+
+  .course:last-child {
+    margin-bottom: 0;
+  }
+
+  .course img {
+    display: none;
+  }
+
+  .course .text-content {
+    padding: 16px;
+    min-height: inherit;
+    background-color: #D3D3D3;
+  }
+
+  .course .text-content h3 {
+    padding: 8px 0 8px 0;
+  }
+
+  .course .text-content h4 {
+    display: none;
+  }
+
+  /* thesis: mobile */
+
+  .thesis h2 {
+    padding: 32px 0 16px 0;
+  }
+
+  .thesis-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -16px 8px -16px;
+  }
+
+  .thesis-info .large-tout,
+  .thesis-info .right-column {
+    display: none;
+  }
+
+  /* footer: mobile */
+
+  footer {
+    border-top: none;
+  }
+
+  footer h5 {
+    margin: 16px 0 16px 0;
+  }
+
+  .footer-group {
+    display: none;
   }
 
 }
