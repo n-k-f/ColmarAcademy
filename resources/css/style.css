@@ -44,12 +44,7 @@ h5 {
   width: 100%;
 }
 
-.main {
-  max-width: 1250px;
-  padding-top: 64px;
-}
-
-.main img {
+img {
   max-width: 100%;
 }
 
@@ -145,7 +140,8 @@ nav span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 0 32px 24px;
+  padding: 96px 0 32px 24px;
+  /* padding-top here is 96 because normally it would be 32px, but to account for the size of the fixed header bar, we need to add another 64px.*/
 }
 
 .banner-text {
