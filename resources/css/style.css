@@ -124,13 +124,17 @@ a:hover {
 }
 
 nav {
-  padding-right: 24px;
   display: flex;
   align-items: center;
+  margin-right: 24px;
 }
 
 nav span {
   padding-left: 16px;
+}
+
+nav span:last-child {
+  margin-right: 24px;
 }
 
 
